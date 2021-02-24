@@ -1,3 +1,7 @@
+/**
+ * @autor: Vladimir Aca
+ */
+
 import { HttpHeaders } from "@angular/common/http";
 
 export const HOST = 'http://localhost:8080/rest.service.example/api/';

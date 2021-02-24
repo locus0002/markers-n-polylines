@@ -1,3 +1,7 @@
+/**
+ * @autor: Vladimir Aca
+ */
+
 export class PositionC {
   public userId: number;
   public timeStamp: string;

@@ -1,3 +1,7 @@
+/**
+ * @autor: Vladimir Aca
+ */
+
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
@@ -163,6 +167,7 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
+  //ID test: 1614066736580;
   searchPath() {
     const prompt = this.dialogCtrl.open(PromptComponent);
     prompt.afterClosed().subscribe(result => {
@@ -175,7 +180,6 @@ export class AppComponent implements OnInit, OnDestroy {
         this.snackBarCtrl.open('You should type an ID', 'Dismiss');
       }
     });
-    // 1614066736580;
   }
 
 }
