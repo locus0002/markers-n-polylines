@@ -1,27 +1,25 @@
-# DrawRoutes
+# Angular Markers & Polylines
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+This project is the second part of a web application. You can find the backend [here]((https://github.com/locus0002/rest-service-example/tree/main)).
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Angular CLI](https://cli.angular.io/)
+- [API key of google maps](https://developers.google.com/maps/documentation/javascript/get-api-key)
+- [Backend web services](https://github.com/locus0002/rest-service-example/tree/main)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+- Clones this repository
+- Inside of the project folder runs `npm install` from Angular CLI
+- Replaces the _xxxx_ string in the index.html file with your API key in line number 9
+- After the console finished its task, you can run the project using `ng serve` from Angular CLI
+- Finally, makes sure the backend is running
 
-## Build
+## Screenshots
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![validation](https://github.com/locus0002/markers-n-polylines/blob/master/images/validate.png?raw=true)
 
-## Running unit tests
+![markers](https://github.com/locus0002/markers-n-polylines/blob/master/images/markers.png?raw=true)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![path](https://github.com/locus0002/markers-n-polylines/blob/master/images/path.png?raw=true)
