@@ -1,0 +1,37 @@
+<mat-toolbar color="primary" class="draw-path-toolbar" >
+  <span>Draw Paths</span>
+  <span class="spacer"></span>
+  <button mat-icon-button (click)="drawPath()" >
+    <mat-icon>edit</mat-icon>
+  </button>
+  <button mat-icon-button (click)="createPath()" >
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-icon-button (click)="savePath()" >
+    <mat-icon>save</mat-icon>
+  </button>
+  <button mat-icon-button (click)="searchPath()" >
+    <mat-icon>search</mat-icon>
+  </button>
+  <button mat-icon-button (click)="deleteMarkers()" >
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-progress-bar *ngIf="showProgressBar" mode="indeterminate" color="warn" class="top-progress" ></mat-progress-bar>
+
+<google-map
+  height = "100%"
+  width = "100%"
+  [zoom] = "zoom"
+  [center] = "center"
+  [options] = "options"
+  (mapClick) = "onClick($event)"
+>
+  <map-marker
+    *ngFor="let marker of markers"
+    [position] = "marker.getPosition()"
+    [label] = "marker.getLabel()"
+    [title] = "marker.getTitle()"
+  ></map-marker>
+</google-map>
+
