@@ -20,6 +20,6 @@ This project is the second part of a web application. You can find the backend [
 
 ![validation](https://github.com/locus0002/markers-n-polylines/blob/main/images/validate.png?raw=true)
 
-![markers](https://github.com/locus0002/markers-n-polylines/blob/main/images/markers.png?raw=true)
+![markers](https://github.com/locus0002/markers-n-polylines/blob/main/images/makers.png?raw=true)
 
 ![path](https://github.com/locus0002/markers-n-polylines/blob/main/images/path.png?raw=true)
